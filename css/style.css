@@ -210,15 +210,15 @@ template {
   width: 75px;
   height: 23px;
   transition: background 0.3s ease-in;
-  background: url(../../build/img/logo-mob.svg) no-repeat;
+  background: url(../img/logo-mob.svg) no-repeat;
   z-index: 11;
 }
 .page-header__logo:hover {
-  background: url(../../build/img/logo-mob-hover.svg) no-repeat;
+  background: url(../img/logo-mob-hover.svg) no-repeat;
   transition: all 0.3s ease-in;
 }
 .page-header__logo:active {
-  background: url(../../build/img/logo-mob.svg) no-repeat;
+  background: url(../img/logo-mob.svg) no-repeat;
   opacity: 0.3;
   transition: all 0.3s ease-in;
 }
@@ -227,13 +227,13 @@ template {
     top: 29px;
     width: 147px;
     height: 41px;
-    background: url(../../build/img/logo-tablet.svg) no-repeat;
+    background: url(../img/logo-tablet.svg) no-repeat;
   }
   .page-header__logo:hover {
-    background: url(../../build/img/logo-tablet-hover.svg) no-repeat;
+    background: url(../img/logo-tablet-hover.svg) no-repeat;
   }
   .page-header__logo:active {
-    background: url(../../build/img/logo-tablet.svg) no-repeat;
+    background: url(../img/logo-tablet.svg) no-repeat;
   }
 }
 @media (min-width:1200px) {
@@ -241,13 +241,13 @@ template {
     top: 27px;
     left: 11%;
     margin-left: 0;
-    background: url(../../build/img/logo-desc.svg) no-repeat;
+    background: url(../img/logo-desc.svg) no-repeat;
   }
   .page-header__logo:hover {
-    background: url(../../build/img/logo-desc-hover.svg) no-repeat;
+    background: url(../img/logo-desc-hover.svg) no-repeat;
   }
   .page-header__logo:active {
-    background: url(../../build/img/logo-desc.svg) no-repeat;
+    background: url(../img/logo-desc.svg) no-repeat;
   }
 }
 .main-nav {
@@ -1461,14 +1461,14 @@ template {
     height: 41px;
     margin-top: -12px;
     transition: background 1.5s ease;
-    background: url(../../build/img/logo-tablet-footer.svg) no-repeat;
+    background: url(../img/logo-tablet-footer.svg) no-repeat;
   }
   .page-footer__logo:hover {
-    background: url(../../build/img/logo-tablet-hover.svg) no-repeat;
+    background: url(../img/logo-tablet-hover.svg) no-repeat;
     transition: background 1.5s ease;
   }
   .page-footer__logo:active {
-    background: url(../../build/img/logo-tablet-footer.svg) no-repeat;
+    background: url(../img/logo-tablet-footer.svg) no-repeat;
     opacity: 0.3;
     transition: background 1s ease;
   }
@@ -1520,13 +1520,13 @@ template {
   }
   .page-footer__logo {
     margin-left: 0;
-    background: url(../../build/img/logo-desc-footer.svg) no-repeat;
+    background: url(../img/logo-desc-footer.svg) no-repeat;
   }
   .page-footer__logo:hover {
-    background: url(../../build/img/logo-desc-hover.svg) no-repeat;
+    background: url(../img/logo-desc-hover.svg) no-repeat;
   }
   .page-footer__logo:active {
-    background: url(../../build/img/logo-desc-footer.svg) no-repeat;
+    background: url(../img/logo-desc-footer.svg) no-repeat;
   }
 }
 @media (min-width:700px) {

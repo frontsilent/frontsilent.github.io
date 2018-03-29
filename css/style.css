@@ -1364,6 +1364,7 @@ template {
   cursor: pointer;
 }
 .contacts__text--mail {
+  display: inline-block;
   border-bottom: 1px solid transparent;
   transition: all 0.3s ease-in;
 }

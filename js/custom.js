@@ -52,7 +52,7 @@ function initMap() {
 				lat: 59.93895,
 				lng: 30.32329
 			},
-			image: "../build/img/contacts__marker.svg",
+			image: "../img/contacts__marker.svg",
 			info: "ул. Большая Конюшенная,19/8"
 		}
 	]

@@ -1,0 +1,46 @@
+@media @tablet-width {
+	.social {
+		.flex();
+		font-size: 0;
+	}
+	.social__link {
+		display: block;
+		position: relative;
+		width: 39px;
+		height: 39px;
+		margin-right: 12px;
+		border: 3px solid fade(@color-dark-blue, 10%);
+		border-radius: 50%;
+		.transition(border);
+		&:last-of-type {
+			margin-right: 0;
+		}
+		&:hover {
+			border: 3px solid @color-dark-blue;
+			.transition(border);
+		}
+		&:active {
+			opacity: 0.3;
+			border: 3px solid fade(@color-dark-blue, 10%);
+			.transition();
+		}
+	}
+	.social__icon {
+		display: block;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		&--tw {
+			margin-left: -9px;
+			margin-top: -7px;
+		}
+		&--fb {
+			margin-left: -5px;
+			margin-top: -9px;
+		}
+		&--yt {
+			margin-left: -6px;
+			margin-top: -7px;
+		}
+	}
+}

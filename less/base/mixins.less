@@ -1,0 +1,29 @@
+.container() {
+	width: auto;
+	@media @tablet-width {
+		width: 88%;
+		margin: 0 auto;
+	}
+	@media @desctop-width {
+		width: 78%;
+	}
+}
+
+.pseudo(@content: "", @width: 0px, @height: 0px) {
+	content: @content;
+	position: absolute;
+	display: block;
+	width: @width;
+	height: @height;
+}
+
+.flex(@direct: row, @justify: flex-start, @align: stretch) {
+	display: flex;
+	flex-direction: @direct;
+	justify-content: @justify;
+	align-items: @align;
+}
+
+.transition(@property: all, @time: 0.3s, @animation: ease-in) {
+	transition: @property @time @animation;
+}

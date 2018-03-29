@@ -1,0 +1,100 @@
+.review__wrapper {
+	position: relative;
+	.container();
+}
+
+.review {
+	position: relative;
+	font-family: "Open Sans";
+	font-size: 14px;
+	line-height: 30px;
+	text-align: center;
+	color: @color-dark-blue;
+	background-color: @color-white;
+}
+
+.review__item {
+	position: relative;
+	background: @color-white;
+}
+
+.review__author {
+	position: relative;
+	width: 100%;
+	padding: 0;
+	padding-top: 42px;
+	padding-bottom: 16px;
+	margin: 0;
+	background-color: @color-white;
+	font-family: "Open Sans Bold";
+	font-size: 18px;
+	text-align: center;
+	color: @color-black;
+	z-index: 5;
+}
+
+.review__author span {
+	display: none;
+}
+
+.review__desc {
+	min-height: 180px;
+	padding: 0 6%;
+	padding-top: 0px;
+	padding-bottom: 55px;
+	text-align: center;
+	margin: 0 auto;
+	color: @color-dark-blue;
+}
+
+.review__items input {
+	display: none;
+}
+
+@media @tablet-width {
+	.review__author {
+		position: absolute;
+		bottom: 42px;
+		left: 0px;
+		padding-top: 0;
+		padding-bottom: 0px;
+		font-size: 20px;
+	}
+	.review__author span {
+		display: block;
+		margin-top: 2px;
+		font-family: "Open Sans";
+		font-size: 14px;
+	}
+	.review__desc {
+		width: 100%;
+		margin: 0 auto;
+		min-height: 103px;
+		padding: 0;
+		padding-top: 28px;
+		padding-bottom: 124px;
+		font-size: 18px;
+	}
+}
+
+@media @desctop-width {
+	.review__desc {
+		position: relative;
+		padding-top: 193px;
+		width: 680px;
+		max-width: 100%;
+		&::before {
+			.pseudo("", 79px, 63px);
+			top: 18%;
+			left: 46%;
+			background-image: url(../img/icons/quotes.svg);
+		}
+	}
+	.review__author {
+		font-size: 24px;
+		span {
+			margin-top: 0;
+			font-size: 18px;
+		}
+	}
+}

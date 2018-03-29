@@ -1,0 +1,180 @@
+.intro {
+	display: block;
+	position: relative;
+	min-height: 462px;
+	margin-top: -73px;
+	font-family: "Open Sans";
+	background-color: @color-darken-blue;
+	background-image: url(../img/intro-iphone.png), url(../img/back.jpg);
+	background-repeat: no-repeat;
+	background-position: center bottom -25px, center top 0px;
+	background-size: auto, cover;
+	@media @retina {
+		background-image: url(../img/intro-iphone-mobile@2x.png), url(../img/back-tablet@2x.jpg);
+		background-position: center bottom 5px, center top 0px;
+		background-size: auto 290px, auto 460px;
+	}
+}
+
+.intro__wrapper {
+	height: auto;
+}
+
+.intro__inform {
+	position: absolute;
+	width: 100%;
+	min-height: 270px;
+	box-sizing: border-box;
+	top: 462px;
+	padding: 28px 6%;
+	background-color: @color-darken-blue;
+}
+
+.intro__title {
+	display: none;
+	margin: 0;
+	padding: 0;
+}
+
+.intro__button {
+	cursor: pointer;
+	display: block;
+	width: 100%;
+	height: auto;
+	padding: 15px;
+	margin-bottom: 30px;
+	font-family: "Open Sans Bold";
+	font-size: 18px;
+	line-height: 18px;
+	color: @color-white;
+	text-decoration: none;
+	background: transparent;
+	border: 3px solid @color-white;
+	border-top-left-radius: 30px 25px;
+	border-top-right-radius: 30px 25px;
+	border-bottom-right-radius: 30px 25px;
+	border-bottom-left-radius: 30px 25px;
+	text-align: center;
+	.transition();
+	transition-property: color, background;
+	&:hover {
+		color: @color-pink;
+		background: @color-white;
+		.transition();
+	}
+	&:active {
+		color: fade(@color-pink, 30%);
+		.transition();
+	}
+}
+
+.intro__download-app {
+	.flex(row, space-between, flex-end);
+	padding: 0 14%;
+	margin-bottom: 25px;
+	text-align: center;
+	font-size: 0px;
+	line-height: 0;
+}
+
+.intro__desc {
+	font-family: "Open Sans Light";
+	font-size: 14px;
+	line-height: 24px;
+	text-align: center;
+	color: @color-white;
+}
+
+@media @tablet-width {
+	.intro {
+		min-height: 730px;
+		margin-top: -110px;
+		background-image: url(../img/intro-iphone-tab.png), url(../img/back.jpg);
+		background-position: center bottom 0px, center top 0px;
+		@media @retina {
+			background-image: url(../img/intro-iphone-tab@2x.png), url(../img/back-tablet@2x.jpg);
+			background-position: center bottom 0px, center top 0px;
+			background-size: auto 545px, auto 730px;
+		}
+	}
+	.intro__wrapper {
+		.container();
+	}
+	.intro__inform {
+		.flex(column);
+		flex-grow: 1;
+		position: relative;
+		left: -3px;
+		width: 49%;
+		max-width: 380px;
+		box-sizing: content-box;
+		top: 0;
+		padding: 0;
+		background-color: transparent;
+	}
+	.intro__title {
+		display: block;
+		margin-top: 204px;
+		margin-bottom: 30px;
+		padding: 0 16%;
+		font-family: "Open Sans Light";
+		font-size: 40px;
+		line-height: 1.2;
+		font-weight: 300;
+		text-align: center;
+		color: @color-white;
+	}
+	.intro__button {
+		margin-bottom: 46px;
+	}
+	.intro__desc {
+		font-size: 18px;
+	}
+	.intro__download-app {
+		padding: 0 15%;
+		margin-bottom: 37px;
+	}
+	.intro__icon--android {
+		opacity: 0.4;
+		height: 52px;
+	}
+}
+
+@media @desctop-width {
+	.intro {
+		min-height: 853px;
+		margin-top: 0;
+		background-image: url(../img/intro-iphone-desc.png), url(../img/back-desctop.jpg);
+		background-position: right 0% bottom 0px, center top 0px;
+		@media @retina {
+			background-image: url(../img/intro-iphone-desc@2x.png), url(../img/back-desktop@2x.jpg);
+			background-size: auto 650px, auto 870px;
+		}
+	}
+	.intro__inform {
+		width: 32%;
+	}
+	.intro__button {
+		margin-bottom: 60px;
+	}
+	.intro__title {
+		margin: 0 auto;
+		margin-top: 220px;
+		margin-bottom: 50px;
+		padding: 0;
+		font-size: 50px;
+	}
+	.intro__button {
+		font-size: 21px;
+		line-height: 18px;
+		padding: 16px;
+		margin-bottom: 66px;
+	}
+	.intro__download-app {
+		align-items: center;
+		margin-bottom: 53px;
+	}
+	.intro__icon--android {
+		opacity: 1;
+	}
+}

@@ -1,0 +1,27 @@
+.map__wrapper {
+	display: none;
+}
+
+@media @tablet-width {
+	.map__wrapper {
+		display: block;
+		width: 100%;
+		padding-bottom: 40%;
+		position: relative;
+		overflow: hidden;
+		height: 0px;
+	}
+	.map {
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		position: absolute;
+	}
+}
+
+@media @desctop-width {
+	.map__wrapper {
+		padding-bottom: 35%;
+	}
+}

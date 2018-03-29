@@ -1,0 +1,55 @@
+.page-header {
+	position: relative;
+	color: #ffffff;
+}
+
+.page-header__logo {
+	display: block;
+	position: absolute;
+	left: 6%;
+	top: 22px;
+	width: 75px;
+	height: 23px;
+	.transition(background);
+	background: url(../../build/img/logo-mob.svg) no-repeat;
+	z-index: 11;
+	&:hover {
+		background: url(../../build/img/logo-mob-hover.svg) no-repeat;
+		.transition();
+	}
+	&:active {
+		background: url(../../build/img/logo-mob.svg) no-repeat;
+		opacity: 0.3;
+		.transition();
+	}
+}
+
+@media @tablet-width {
+	.page-header__logo {
+		top: 29px;
+		width: 147px;
+		height: 41px;
+		background: url(../../build/img/logo-tablet.svg) no-repeat;
+		&:hover {
+			background: url(../../build/img/logo-tablet-hover.svg) no-repeat;
+		}
+		&:active {
+			background: url(../../build/img/logo-tablet.svg) no-repeat;
+		}
+	}
+}
+
+@media @desctop-width {
+	.page-header__logo {
+		top: 27px;
+		left: 11%;
+		margin-left: 0;
+		background: url(../../build/img/logo-desc.svg) no-repeat;
+		&:hover {
+			background: url(../../build/img/logo-desc-hover.svg) no-repeat;
+		}
+		&:active {
+			background: url(../../build/img/logo-desc.svg) no-repeat;
+		}
+	}
+}

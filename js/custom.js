@@ -39,7 +39,7 @@ function initMap() {
 		lat: 59.9391,
 		lng: 30.3232
 	};
-	var markerUrl = "..img/contacts-marker.svg"
+	var markerUrl = "../img/contacts-marker.svg"
 	var myMap = new google.maps.Map(document.querySelector(".map"), {
 		zoom: 17,
 		scrollwheel: false,

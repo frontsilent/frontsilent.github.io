@@ -36,7 +36,7 @@ gulp.task("style", function () {
 		}));
 });
 gulp.task("images", function () {
-	return gulp.src("build/img/**/*.{png,jpg,gif,svg}")
+	return gulp.src("img/**/*.{png,jpg,gif,svg}")
 		.pipe(imagemin([
       imagemin.optipng({
 				optimizationLevel: 5

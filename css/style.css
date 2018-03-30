@@ -24,6 +24,7 @@ body {
   margin: 0;
   padding: 0;
   position: relative;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 24px;
   font-style: normal;
@@ -193,9 +194,6 @@ summary {
  * Add the correct display in IE 10+.
  */
 template {
-  display: none;
-}
-[hidden] {
   display: none;
 }
 .page-header {
@@ -1557,24 +1555,24 @@ template {
   }
   .social__link:active {
     opacity: 0.3;
-    border: 3px solid rgba(40, 54, 69, 0.1);
+    border: 3px solid rgba(40, 54, 69, 0.35);
     transition: all 0.3s ease-in;
   }
-  .social__icon {
+  .social__icons {
     display: block;
     position: absolute;
     left: 50%;
     top: 50%;
   }
-  .social__icon--tw {
+  .social__icons--tw {
     margin-left: -9px;
     margin-top: -7px;
   }
-  .social__icon--fb {
+  .social__icons--fb {
     margin-left: -5px;
     margin-top: -9px;
   }
-  .social__icon--yt {
+  .social__icons--yt {
     margin-left: -6px;
     margin-top: -7px;
   }

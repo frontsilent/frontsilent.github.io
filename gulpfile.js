@@ -4,7 +4,6 @@ var less = require("gulp-less");
 var plumber = require("gulp-plumber");
 var autoprefixer = require("autoprefixer");
 var postcss = require("gulp-postcss");
-//var minify = require("gulp-csso");
 var cssmin = require('gulp-cssmin');
 var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");

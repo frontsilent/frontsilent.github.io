@@ -39,7 +39,7 @@ function initMap() {
 		lat: 59.9391,
 		lng: 30.3232
 	};
-	var markerUrl = "../img/contacts-marker.svg"
+	var markerImage = "img/contacts-marker.svg"
 	var myMap = new google.maps.Map(document.querySelector(".map"), {
 		zoom: 17,
 		scrollwheel: false,
@@ -52,7 +52,7 @@ function initMap() {
 				lat: 59.93895,
 				lng: 30.32329
 			},
-			image: markerUrl,
+			image: markerImage,
 			info: "ул. Большая Конюшенная,19/8"
 		}
 	]

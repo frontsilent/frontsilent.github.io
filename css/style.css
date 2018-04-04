@@ -290,6 +290,7 @@ template {
     transition: all 0.3s ease-in;
   }
   .main-nav__icon:active {
+    fill: #ffffff;
     opacity: 0.3;
     transition: all 0.3s ease-in;
   }
@@ -315,7 +316,7 @@ template {
     max-height: 0px;
     text-align: center;
     z-index: 4;
-    transition: max-height 0.8s ease-out;
+    transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
   }
   .main-nav__input:checked + .main-nav__header {
     background: #283645;
@@ -342,9 +343,9 @@ template {
   .main-nav__input:checked ~ .main-nav__items {
     display: block;
     width: 100%;
-    max-height: 5000px;
+    max-height: 2000px;
     background-color: #1d2631;
-    transition: max-height 1.3s ease-in;
+    transition: max-height 1s ease-in-out;
     z-index: 4;
   }
 }

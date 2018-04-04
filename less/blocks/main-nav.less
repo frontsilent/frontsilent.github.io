@@ -41,6 +41,7 @@
 			.transition();
 		}
 		&:active {
+      fill: @color-white;
 			opacity: 0.3;
 			.transition();
 		}
@@ -67,7 +68,7 @@
 		max-height: 0px;
 		text-align: center;
 		z-index: 4;
-		.transition(max-height, 0.8s, ease-out)
+		.transition(max-height, 0.5s, cubic-bezier(0, 1, 0, 1));
 	}
 	.main-nav__input:checked + .main-nav__header {
 		background: @color-dark-blue;
@@ -94,9 +95,9 @@
 	.main-nav__input:checked ~ .main-nav__items {
 		display: block;
 		width: 100%;
-		max-height: 5000px;
+		max-height: 2000px;
 		background-color: @color-darken-blue;
-		transition: max-height 1.3s ease-in;
+		transition: max-height 1s ease-in-out;
 		z-index: 4;
 	}
 }

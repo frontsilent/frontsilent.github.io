@@ -255,7 +255,6 @@ template {
   background-color: transparent;
   overflow: hidden;
   cursor: pointer;
-  z-index: 3;
 }
 @media (max-width:1199px) {
   .main-nav__toogle {
@@ -297,6 +296,7 @@ template {
     display: none;
     position: relative;
     text-align: center;
+    z-index: 4;
   }
 }
 .main-nav__item {
@@ -411,6 +411,7 @@ template {
   display: block;
   position: relative;
   min-height: 462px;
+  margin-top: -67px;
   font-family: "Open Sans";
   background-color: #1d2631;
   background-image: url(../img/intro-iphone.png), url(../img/back.jpg);
